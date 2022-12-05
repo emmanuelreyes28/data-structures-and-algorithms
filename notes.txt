@@ -1,0 +1,55 @@
+Time Complexity: a measure how fast a solution/algorithm runs.
+
+Space Complexity: a measure of how much auxiliary memory an algorithm takes up. It's expressed using Big O notation.
+
+Complexity Analysis: involves finding both the time and space complexity of an algorithm. 
+                     It is effectively used to determine how "good" an algorithm is and whether it's "better" than another one.
+
+
+-- MEMORY --
+
+Memory is a bounded canvas of memory slots that can store data. It is possible to run out of memory due to being bounded.
+
+Your program will always store a variable in a memory or series of memory slots that are free (not taken up)
+If a variable needed more than 1 memory slot to store information it would store it in back to back memory slots
+
+Memory is made up of BITS which are 0s and 1s. We store data in the form of bits.
+Memory has memory addresses which are made up of binary numbers.
+
+1 memory slot can hold 8 bits which is called a byte. 8 bits = 1 byte 
+1 byte is 2^8 since their are 8 bits and each bit has an option of 0 or 1 meaing  1 byte can only have 256 potential data values
+How would we store more data values?
+Just increase the number of bits that represent that data value
+An int is represented using 32 bits (4 bytes) vs a long int which is represented using 64 bits (8 bytes)
+A 32 bit int would take up 4 memory slots (1byte/slot) and a 64 bit int would take up 8 slots (1byte/slot)
+When storing a list of ints these int will also have to be in contiguous memory slots. For example, [1,2,3] would take up
+12 contiguous memory slots
+
+Fix-Width Integer: an int represented by a fixed amount of bits (32 vs 64). Once decided what type of int you are going to be using
+                   it will always take up the amount of memory regardless of how large the number is. A 32 bit int of 1 will take up 4 memory slots
+                   and a 32 bit int of 1000 will also take up 4 memory slots
+
+Pointers: memory addresses can point to other memory addresses that store a relevant piece of data 
+
+
+https://en.wikipedia.org/wiki/Binary_number
+
+-- BIG O NOTATION --
+
+We care about how fast an algorithm runs as the size of the input increases.
+
+Asymptotic Analysis: refers to how our function performs as we get closer to inifinty or some very large number
+
+Big O Complexities refer to the worst case complexity of an algorithm
+
+Time Complexities:
+
+O(1) or constant time: as the size of the input increases the speed of the algorithm is constant.
+O(log(N)) or logarithmic
+O(N) or linear time: as the size of the input increases the speed of the algorithm increases linearly.
+O(Nlog(n)) or log-linear
+O(N^2) or quadratic 
+O(N^3) or cubic 
+O(2^N) or exponential 
+O(N!) or factorial
+
