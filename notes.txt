@@ -53,3 +53,23 @@ O(N^3) or cubic
 O(2^N) or exponential 
 O(N!) or factorial
 
+-- LOGARITHM --
+
+Logarithm: used to describe the complexity analysis of algorithms.
+
+Its usage always implies a logarithm of base 2.
+
+log(n) = y IF AND ONLY IF 2^y = n
+
+Basically whenever our inputs doubles in size then an algorithm of O(log(n)) where n is the size of the input.
+Then whenever the input doubles in size the number of operations needed to complete the algo only increases by 1.
+
+In the other hand an algo with a linear time complexity would see its number of operations double if its input size doubled.
+
+Am I eliminating half of the input at every step of my function?
+If I double the size of my input, am I only going to be performing one extra operation?
+
+If you answered yes to both questions above then we are most likely dealing with an algorithm that runs in log(n) time
+
+-- ARRAYS --
+
