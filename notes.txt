@@ -73,3 +73,26 @@ If you answered yes to both questions above then we are most likely dealing with
 
 -- ARRAYS --
 
+Static Array vs Dynamic Array
+
+Static Array: an array that allocates a fixed amount of memory to be used for storing the array's values.
+              When you append a value to a static array, the array gets copied and allocated new memory for it,
+              accoutning for the extra space needed for the newly appended value. This is done in linear time.
+
+Dynamic Array: an array that preemptively allocates double the amount of memory needed to store the array's values.
+               Unlike a static array, appending a value to a dynamic array is done in constant time until the allocated memory
+               is filled up. Once the array fills up, the array is then copied and doubles the memory once again allocated for it.
+               This implementation leads to an amortized constant time insertion at end operation.
+
+Array's standard operations and their time complexities:
+ - Accessing a value at a given index: O(1)
+ - Updating a value at a given index: O(1)
+ - Inserting a value at the beginning: O(n)
+ - Inserting a value in the middle: O(n)
+ - Inserting a value at the end:
+    - amortized O(1) when dealing with a dynamic array
+    - O(n) when dealing with a static array
+ - Removing a value at the beginning: O(n) this is because all the values in the array have to shift left
+ - Removing a value in the middle: O(n) once again the values have to shift
+ - Removing a value at the end: O(1) no shifting since value is at the end
+ - Copying an array: O(n) array has to be traversed and copied
