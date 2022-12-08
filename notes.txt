@@ -96,3 +96,19 @@ Array's standard operations and their time complexities:
  - Removing a value in the middle: O(n) once again the values have to shift
  - Removing a value at the end: O(1) no shifting since value is at the end
  - Copying an array: O(n) array has to be traversed and copied
+
+ -- LINKED LISTS --
+
+ Singly linked list: typically exposes its head to its user for easy access. To find a node
+                     in you must traverse through all the of nodes leading up to the node in question.
+                     Adding and removing nodes simply involves overwriting next pointers (assuming that 
+                     you have access to the node right before the node that you're adding or removing)
+
+Singly Linked List standard operations and their time complexities:
+ - Accessing the head: O(1)
+ - Accessing the tail: O(n)
+ - Accessing a middle node: O(n)
+ - Inserting/removing the head: O(1)
+ - Inserting/removing the tail: O(n) to access + O(1)
+ - Inserting/removing a middle node: O(n) to access + O(1)
+ - Searching for a value: O(n)
