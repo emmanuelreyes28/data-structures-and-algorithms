@@ -107,8 +107,31 @@ Array's standard operations and their time complexities:
 Singly Linked List standard operations and their time complexities:
  - Accessing the head: O(1)
  - Accessing the tail: O(n)
- - Accessing a middle node: O(n)
- - Inserting/removing the head: O(1)
- - Inserting/removing the tail: O(n) to access + O(1)
- - Inserting/removing a middle node: O(n) to access + O(1)
+ - Accessing a middle node: O(n) because we have to traverse through the linked list 
+ - Inserting/removing the head: O(1) because we are only overriding one memory address whic is the head
+ - Inserting/removing the tail: O(n) to access + O(1) to insert/remove
+ - Inserting/removing a middle node: O(n) to access + O(1) to insert/remove
  - Searching for a value: O(n)
+
+Creating new pointers is very cheap and fast at O(1)
+
+Doubly Linked List: each node in a doubly linked list has a pointer to the previous node in the linked list.
+                    The previous node is typically store in a prev property.
+
+Just as the next property of a doubly link lists tail points to the null value, so too does the prev property of
+a doubly linked list's head.
+
+null <- 0 <-> 1 <-> 2 <-> 3 <-> 4 <-> 5 <-> null
+
+Doubly linked lists standard operations and their time complexities:
+ - Accessing the head: O(1)
+ - Accessing the tail: O(1)
+ - Accessing the middle node: O(n)
+ - Inseting/removing the head: O(1)
+ - Inserting/removing the tail: O(1)
+ - Inserting/removing a middle node: O(n) to access + O(1) to insert/remove
+ - Searching for a value: O(n)
+
+Circular Linked List: has no clear head or tail, because its tail points to its head, effectively forming a closed circle.
+
+A circular linked list can be either a singly circular linked list or a doubly circular linked list.
