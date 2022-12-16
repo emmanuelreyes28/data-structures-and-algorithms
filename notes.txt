@@ -135,3 +135,6 @@ Doubly linked lists standard operations and their time complexities:
 Circular Linked List: has no clear head or tail, because its tail points to its head, effectively forming a closed circle.
 
 A circular linked list can be either a singly circular linked list or a doubly circular linked list.
+
+When wanting to get the index(position) of an element in an array and a value do not use range(len(arr))
+Instead use enumerate to get index and value at the same time and more cleanly
