@@ -97,7 +97,7 @@ Array's standard operations and their time complexities:
  - Removing a value at the end: O(1) no shifting since value is at the end
  - Copying an array: O(n) array has to be traversed and copied
 
- -- LINKED LISTS --
+-- LINKED LISTS --
 
  Singly linked list: typically exposes its head to its user for easy access. To find a node
                      in you must traverse through all the of nodes leading up to the node in question.
@@ -138,3 +138,49 @@ A circular linked list can be either a singly circular linked list or a doubly c
 
 When wanting to get the index(position) of an element in an array and a value do not use range(len(arr))
 Instead use enumerate to get index and value at the same time and more cleanly
+
+-- TREE --
+A data structure that consists of nodes, each with some value and pointers to child-nodes, which recursively form subtrees in the tree.
+
+The first node in a tree is referred to as the root of the tree, while the nodes at the bottom of a tree are referred to as lead nodes
+or simply leaves.
+
+The paths between the root of a tree and its leaves are called branches, and the height of a tree is the length of its longest branch.
+
+The depth of a tree node is its distance from its tree's root aks as the node's level in the tree
+
+A tree is effectively a graph that's connected, directed and acyclic, that has nan explicit root node, and whose nodes all have a single
+parent (except for the root node). Note that in most implementation of trees, tree nodes don't have a pointer to their parent, but they can if
+desired.
+
+There are many types of trees includes binary tree, heaps and tries
+
+* Binary Tree *
+
+A tree whose nodes have up two child-nodes
+
+The structure of a binary tree is such that many of its operations have a logarithmic time complexity, making the binary tree an incredibly attractive
+and commonly used data structure.
+
+* K-ary Tree *
+
+A tree whose nodes have up to k child-nodes. A binary tree is a k-ary tree where k == 2
+
+* Perfect Binary Tree *
+
+A binary tree whose interior nodes all have two child-nodes and whose lead nodes all have the same depth.
+
+* Complete Binary Tree * 
+
+A binary tree that's almost perfect; its interior nodes all have two child nodes, but its leaf nodes don't necessarily
+all have the same dept. Furthermore, the nodes in the last level of a complete biary tree are as far left as possible
+
+* Balanced Binary Tree *
+
+A binary tree whose nodes all have left and right subtrees whose heights differ by no more than 1.
+
+A balanced binary tree is such that the logarithmic time complexity of its operations is maintained.
+
+* Full Binary Tree *
+
+A binary tree whose nodes all have either two child nodes or zero child nodes.
