@@ -250,3 +250,35 @@ String's standard operations and theur corresponding time complexities:
  - Traverse through a string: O(n) Time | O(1) space
  - Copy a string: O(n) space and time
  - Get a string or char: O(1) space and time 
+
+-- GRAPHS --
+
+Graph: a collection of nodes or values called vertices that might be related; relation between vertice are called edges.
+
+Graph Cycle: a cycle occurs in a grpah when three or more vertices in the graph are connected so as to form a closed loop.
+             Note: the definition of a graph cycle is sometimes broadened to include cycles of length two or one; in the context
+             of coding interviews, when dealing with questions that involve graph cycles, it's important to clarify what exactly
+             constitues a cycle.
+
+Acyclic Graph: a graph that has no cycles.
+
+Cyclic Graph: a graph that has at least one cycle.
+
+Directed Graph: a graph whose edges are directed, meaning that they can only be traversed in one direction, which is specified.
+                
+                For example, a graph of airports and flights would likely be directed, since a flight specifically goes from one airport to another
+                (i.e., it has a direction), without necessarily implying the presence of a flight in the opposite direction.
+
+Undirected Graph: a graph whose edges are undirected, meaning that they can be traversed in both directions.
+                  
+                  For example, a graph of friends would likely be undirected, since a frinedship is, by nature, bidirectional.
+
+Connected Graph: a graph is connected if for every pair of vertices in the graph, there's a path of one or more esges connecting the given vertices.
+                 
+                 In the case of a directed graph the graph is:
+                  - STRONGLY CONNECTED if there are bidirectional connections between the vertices of every pair of vertices (i.e. for every vertex-pair 
+                  (u, v) you can reach v from u and u from v)
+
+                  - WEAKLY CONNECTED if there are connections (but not necessarily bidirectional ones) between the vertices of every pair of vertices.
+
+A graph that isn't connected is said to be DISCONNECTED. 
