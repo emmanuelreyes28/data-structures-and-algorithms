@@ -1,4 +1,5 @@
-# O(nlog(n)) time | O(1) space - where n is the number of students
+# O(nlog(n)) time since we have to sort both array and then traverse throuh values - where n is the number of students
+# O(1) space
 def classPhotos(redShirtHeights, blueShirtHeights):
     '''
     First thought is to sort both of the arrays in descending order. Since student with the 
