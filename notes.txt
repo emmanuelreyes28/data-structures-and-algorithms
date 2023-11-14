@@ -281,4 +281,34 @@ Connected Graph: a graph is connected if for every pair of vertices in the graph
 
                   - WEAKLY CONNECTED if there are connections (but not necessarily bidirectional ones) between the vertices of every pair of vertices.
 
-A graph that isn't connected is said to be DISCONNECTED. 
+A graph that isn't connected is said to be DISCONNECTED.
+
+-- HEAPS --
+Heaps are typically visualized as trees, more specifically a complete binary tree. There are two different types of heaps:
+
+Min Heap: the value of node i is greater than or equal to its parent (min value will be at the root node)
+Max Heap: the value of node i is less than or equal to its parent (max value will be at the root node)
+
+Uses:
+ - heapsort --> max heap
+ - priority queues --> min heap 
+
+Height: O(log n)
+Root of the tree is at index 1 of the array
+Left child: left(i) = 2*i 
+Right child: right(i) = 2*i + 1
+Parent of node: parent(i) = floor(i//2)
+
+Operations and their time complexity:
+ - Insert: O(log n)
+ - Pop: O(log n)
+ - Min/Max: O(1)
+
+Max_heapify is used to have the largest value above the respective smallest value which uses recursion to
+complete this function. In this scenario we try to have the smallest value put in the correct position which
+is called "float down". Running time of max heapify is O(log n) due to the height of the complete binary tree
+
+Build Max Heap - wrapper function that calls max-heapify 
+   We can determie the leaves of the tree using this formula: leaves = A[floor(n//2) + 1] to A[n]
+   Uses bottom up approach since we are not starting at the root node
+   Run time: O(n)
