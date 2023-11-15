@@ -312,3 +312,24 @@ Build Max Heap - wrapper function that calls max-heapify
    We can determie the leaves of the tree using this formula: leaves = A[floor(n//2) + 1] to A[n]
    Uses bottom up approach since we are not starting at the root node
    Run time: O(n)
+
+-- BFS -- 
+To find the shortest path using BFS ask yourself these 2 questions:
+   1. Is there a path from node A to node B?
+   2. What is the shortest path from node A to node B?
+
+BFS not only finds a path from A to B, it also finds the shortest path.
+
+Use Queues data structure to implement BFS algo
+   - queues have two operations: enque (add an item to the queue) and deque (take an item off the queue)
+   - queues use the FIFO data structure: First In, First Out
+
+Running time of BFS:
+   - O(number of edges): if you search your entire network for a mango seller, that means you'll follow each edge
+   - You also keep a queue of every person to search. Adding one person to the queue take constant time O(1). Doing
+      this for every person will take O(number of nodes). BFS takes O(number of nodes + number of edges), and its more
+      commonly written as O(V+E) (V for number of vertices, E for number of edges)
+
+-- Binary Search Trees --
+In a Binary Search Tree the values to the left of the node are smaller in value and nodes to the right
+are larger in value. 
